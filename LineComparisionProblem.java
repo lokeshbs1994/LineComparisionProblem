@@ -14,7 +14,24 @@ public class LineComparisionProblem {
         int x2 = sc.nextInt();
         int y2 = sc.nextInt();
         //Computation
-        double Length_of_line = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        System.out.println("length of line is:" + Length_of_line);
+        Double Length_of_line1 = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        System.out.println("length of line1 is:" + Length_of_line1);
+
+        System.out.print("Enter x3 & y3 co-ordinates of first point: ");
+        int x3 = sc.nextInt();
+        int y3 = sc.nextInt();
+        System.out.print("Enter x4 & y4 co-ordinate of second point: ");
+        int x4 = sc.nextInt();
+        int y4 = sc.nextInt();
+        //Computation
+        Double Length_of_line2 = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
+        System.out.println("length of line2 is:" + Length_of_line2);
+        if ( Length_of_line1.equals(Length_of_line2))
+        {
+            System.out.println("line1 and line2 are equal");
+        }
+        else {
+            System.out.println("line1 and line2 are not equal");
+        }
     }
 }
