@@ -26,12 +26,20 @@ public class LineComparisionProblem {
         //Computation
         Double Length_of_line2 = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
         System.out.println("length of line2 is:" + Length_of_line2);
-        if ( Length_of_line1.equals(Length_of_line2))
+
+        int value = Length_of_line1.compareTo(Length_of_line2);
+        if (value < 0)
         {
-            System.out.println("line1 and line2 are equal");
+            System.out.println("Length of line1 is less than length of line2.");
         }
-        else {
-            System.out.println("line1 and line2 are not equal");
+        else if(value > 0)
+        {
+            System.out.println("Length of line1 is greater than length of line2.");
         }
+        else
+        {
+            System.out.println("Both the lines are equal.");
+        }
+
     }
 }
